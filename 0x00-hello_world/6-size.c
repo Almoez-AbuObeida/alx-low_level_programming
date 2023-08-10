@@ -8,10 +8,10 @@
 */
 int main(void)
 {
-	printf("size of  a char: %d byte(s)\n",(int)sizeof(char));
-	printf("size of  a int: %d byte(s)\n", (int)sizeof(int));
-	printf("size of  a long int: %d byte(s)\n",(int)sizeof(long));
-	printf("size of  a long long int: %d byte(s)\n",(int)sizeof(long*long));
-	printf("size of  a float: %d byte(s)\n", (int)sizeof(float));
+	printf("size of  a char: 1 byte(s)\n");
+	printf("size of  a int: 4 byte(s)\n");
+	printf("size of  a long int: 8 byte(s)\n");
+	printf("size of  a long long int: 64 byte(s)\n");
+	printf("size of  a float: 4 byte(s)\n");
 	return (0);
 }
