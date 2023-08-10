@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+/*The main function*/
 int main(void)
 {
 	/*A string of chars to output*/
