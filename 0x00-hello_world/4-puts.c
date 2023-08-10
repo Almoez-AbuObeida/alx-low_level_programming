@@ -2,8 +2,9 @@
 
 /**
 *main functoin - A function prints a text using puts
-*@text: the text variable
-
+(*
+*This function is going to hold a text inside text variable and then print it out using puts.
+*Return 0 
 */
 int main(void)
 {
