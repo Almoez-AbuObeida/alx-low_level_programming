@@ -20,7 +20,7 @@ int main(void)
 		{
 			int k;
 
-			for (k = j + 1; k < 10; k++)
+			for (k = 0; k < 10; k++)
 			{
 				int l;
 
