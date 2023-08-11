@@ -10,9 +10,9 @@ int main(void)
 {
 	char n = 'a';
 
-	while (n <= z)
+	while (n <= 'z')
 	{
-		putchar('%c', n);
+		putchar(n);
 		n++;
 	}
 	putchar('\n');
