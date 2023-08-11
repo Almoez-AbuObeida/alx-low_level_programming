@@ -5,7 +5,7 @@
 (*
 *Description: this function is going to print every number in
 *three digits while the first is less than the second and the second
-is less than and the third)
+*is less than and the third)
 *Return: This function will return 0
 */
 int main(void)
