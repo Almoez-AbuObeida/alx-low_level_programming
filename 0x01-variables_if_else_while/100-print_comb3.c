@@ -9,24 +9,20 @@
 */
 int main(void)
 {
-	int i = 0;
-	int j = 0;
-
-	while (i < 9)
+	for (int i = 0; i < 10; i++)
 	{
-		while (j < 10 && j > i)
+		for (int j = i + 1; j < 10; j++)
 		{
 			putchar(i + 48);
 			putchar(j + 48);
-			while (i < 9 && j > 9)
+			if (i < 8 || j < 9)
 			{
 				putchar(',');
 				putchar(' ');
 			}
-			j++;
 		}
-		i++;
 	}
+
 	putchar('\n');
 
 	return (0);
