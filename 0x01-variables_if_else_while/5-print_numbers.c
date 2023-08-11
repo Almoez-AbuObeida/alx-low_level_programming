@@ -4,7 +4,7 @@
 *main - main function
 (*
 *Description: this function will print numbers from 0 to 9)
-*Retrun: 0
+*Return: this function well return 0
 */
 int main(void)
 {
