@@ -12,10 +12,10 @@ int main(void)
 
 	while (n <= z)
 	{
-		printf("%c", n);
+		putchar("%c", n);
 		n++;
 	}
-	printf("\n");
+	putchar("\n");
 
 	return (0);
 }
