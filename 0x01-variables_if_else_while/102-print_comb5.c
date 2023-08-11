@@ -23,14 +23,14 @@ int main(void)
 			for (k = 0; k < 10; k++)
 			{
 				int l;
-				
+
 				for (l = k + 1; l < 10; l++)
 				{
 					putchar(i + 48);
 					putchar(j + 48);
 					putchar(' ');
 					putchar(k + 48);
-					putchar(l + 40);
+					putchar(l + 48);
 					if (i < 9 || j < 9 || k < 9 || l < 9)
 					{
 						putchar(',');
