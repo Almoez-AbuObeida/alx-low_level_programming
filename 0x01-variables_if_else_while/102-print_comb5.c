@@ -16,7 +16,7 @@ int main(void)
 	{
 		int j;
 
-		for (j = i + 1; j < 10; j++)
+		for (j = 0; j < 10; j++)
 		{
 			int k;
 
