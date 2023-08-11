@@ -5,7 +5,7 @@
 *main - main function
 (*
 *Description: This function is going to pick a random number
-and then declare if it's positive or negative or zero)
+*and then declare if it's positive or negative or zero)
 *Return: this function will return the type of the number
 */
 int main(void)
