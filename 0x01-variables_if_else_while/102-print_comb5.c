@@ -16,11 +16,11 @@ int main(void)
 	{
 		int j;
 
-		for (j = 0; j < 10; j++)
+		for (j = i + 1; j < 10; j++)
 		{
 			int k;
 
-			for (k = 0; k < 10; k++)
+			for (k = j + 1; k < 10; k++)
 			{
 				int l;
 
