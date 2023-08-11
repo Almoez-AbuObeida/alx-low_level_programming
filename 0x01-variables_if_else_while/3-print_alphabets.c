@@ -15,11 +15,13 @@ int main(void)
 	while (n <= 'z')
 	{
 		putchar(n);
+		n++;
 	}
 
 	while (N <= 'Z')
 	{
 		putchar(N);
+		N++;
 	}
 
 	return (0);
