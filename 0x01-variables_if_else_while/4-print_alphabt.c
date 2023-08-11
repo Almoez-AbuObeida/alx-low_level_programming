@@ -3,7 +3,7 @@
 /**
 *main - main function
 (*
-*Description: This function will print all the alphaber 
+*Description: This function will print all the alphabet
 *letters except e and q)
 *Return: 0
 */
