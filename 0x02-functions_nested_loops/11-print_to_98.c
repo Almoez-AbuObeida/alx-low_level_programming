@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
-* times_table - print times table
+* print_to_98 - print numbers from n to 98
 (*
+* @n: integer to start form
 * Return: nothing
 */
 
@@ -39,4 +40,4 @@ void print_to_98(int n)
 			}
 		}
 	}
-}	
+}
