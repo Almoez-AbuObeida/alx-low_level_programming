@@ -18,7 +18,7 @@ void times_table(void)
 			
 			if (c < 10)
 			{
-				_putcahr(' ');
+				_putchar(' ');
 				_putchar(c + 48);
 			}
 			else
