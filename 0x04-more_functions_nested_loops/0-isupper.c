@@ -3,6 +3,7 @@
 /**
 * _isupper - check if it is upper or lower
 * @c: integer to be checked
+(*
 * Return: 1 if true and 0 if false
 */
 
