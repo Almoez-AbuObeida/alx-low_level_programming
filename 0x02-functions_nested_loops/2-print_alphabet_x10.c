@@ -8,39 +8,15 @@
 void print_alphabet_x10(void)
 {
 	char c = 'a';
-
-	while (c <= 'z')
+	int counter = 5;
+	while (counter < 5)
 	{
-		_putchar(c);
-		c++;
+		while (c <= 'z')
+		{
+			_putchar(c);
+			c++;
+		}
+		putchar('\n');
+		counter++;
 	}
-	_putchar('\n');
-
-	while (c <= 'z')
-	{
-		_putchar(c);
-		c++;
-	}
-	_putchar('\n');
-
-	while (c <= 'z')
-	{
-		_putchar(c);
-		c++;
-	}
-	_putchar('\n');
-
-	while (c <= 'z')
-	{
-		_putchar(c);
-		c++;
-	}
-	_putchar('\n');
-
-	while (c <= 'z')
-	{
-		_putchar(c);
-		c++;
-	}
-	_putchar('\n');
 }
