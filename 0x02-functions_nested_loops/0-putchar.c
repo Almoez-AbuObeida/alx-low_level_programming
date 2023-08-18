@@ -1,5 +1,6 @@
 #include <unistd.h>
 
+int _putchar(char c);
 /**
 *main - main function
 (*
