@@ -2,12 +2,12 @@
 
 int _isupper(int c)
 {
-	if (!isupper(c))
+	if (isupper((char) c))
 	{
-		return (0);
+		return (1);
 	}
 	else
 	{
-		return (1);
+		return (0);
 	}
 }
