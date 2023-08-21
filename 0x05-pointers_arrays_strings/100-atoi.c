@@ -15,14 +15,10 @@ int _atoi(char *s)
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			j = j * 10 + s[i] - '0';
-		}
-		else if (s[i] == '-')
-		{
-			j = j * -1;
-		}
-		else
-		{
-			return (0);
+		 	if (s[i] == '-')
+			{
+				j = j * -1;
+			}
 		}
 		i++;
 	}
