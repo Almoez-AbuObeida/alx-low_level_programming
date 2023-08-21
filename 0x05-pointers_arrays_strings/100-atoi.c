@@ -16,13 +16,9 @@ int _atoi(char *s)
 		{
 			j = j * 10 + s[i] - '0';
 		}
-		else if (s[i] == '+')
-		{
-			j *= 1; 
-		}
 		else if (s[i] == '-')
 		{
-			j *= -1;
+			j = j * -1;
 		}
 		else
 		{
