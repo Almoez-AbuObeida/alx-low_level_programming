@@ -17,14 +17,11 @@ void rev_string(char *s)
 	}
 	while (j < i / 2)
 	{
-		if (j != i)
-		{
-			char temp = s[j];
-			s[j] = s[i - 1];
-			s[i] = temp;
-			j++;
-			i--;
-		}
+		char temp = s[j];
+		s[j] = s[i - 1];
+		s[i] = temp;
+		j++;
+		i--;
 	}
 	_putchar('\n');
 }
