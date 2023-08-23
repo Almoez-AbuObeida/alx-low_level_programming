@@ -4,6 +4,7 @@
 * _strcat - a function that concatenates two strings.
 * @dest: a string
 * @src: a stirng
+* @n: a number
 * Return: The tow strings @dest and @src.
 */
 
@@ -24,6 +25,7 @@ char *_strncat(char *dest, char *src, int n)
 		dest[i + j] = tmp;
 		j++;
 	}
+	dest[i + n] = '\0';
 
 	return (dest);
 }
