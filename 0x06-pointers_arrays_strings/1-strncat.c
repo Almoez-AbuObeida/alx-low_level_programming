@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _strcat - a function that concatenates two strings.
+* _strncat - a function that concatenates two strings.
 * @dest: a string
 * @src: a stirng
 * @n: a number
@@ -25,7 +25,7 @@ char *_strncat(char *dest, char *src, int n)
 		dest[i + j] = tmp;
 		j++;
 	}
-	dest[i + n] = '\0';
+	dest[i + j] = '\0';
 
 	return (dest);
 }
