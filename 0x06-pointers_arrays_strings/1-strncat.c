@@ -4,7 +4,7 @@
 * _strncat - a function that concatenates two strings.
 * @dest: a string
 * @src: a stirng
-* @n: a number
+* @n: integer
 * Return: The tow strings @dest and @src.
 */
 
@@ -19,16 +19,20 @@ char *_strncat(char *dest, char *src, int n)
 		i++;
 	}
 	dest[i] = ' ';
+	while (src[k] != '\0')
+	{
+		k++;
+	}
 	while (j < n)
 	{
-		char c = src[j];
+		char tmp = src[j];
 
-		dest[i + j + 1] = c;
+		dest[i + j] = tmp;
 		j++;
 	}
-	if (n < j)
+	if (n < k)
 	{
-		dest[i + n] = '\0';
+		dest[i + j] = '\0';
 	}
 
 	return (dest);
