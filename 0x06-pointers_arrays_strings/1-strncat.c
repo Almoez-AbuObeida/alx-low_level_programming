@@ -30,9 +30,9 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		k++;
 	}
-	if (k >= n)
+	if (n < k)
 	{
-		src[k] = '';
+		dest[i + n] = '\0';
 	}
 
 	return (dest);
