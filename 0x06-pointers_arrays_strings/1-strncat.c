@@ -23,17 +23,14 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		k++;
 	}
-	while (j < n)
+	while (src[j] != '\0' && j < n)
 	{
 		char tmp = src[j];
 
 		dest[i + j] = tmp;
 		j++;
 	}
-	if (n < k)
-	{
-		dest[i + j] = '\0';
-	}
+	dest[i + j] = '\0';
 
 	return (dest);
 }
