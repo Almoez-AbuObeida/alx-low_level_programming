@@ -7,22 +7,19 @@
 */
 void print_number(int n)
 {
-	int power = 10;
-	int len = 0;
-	int i = 1;
+	unsigned int n1;
 
 	if (n < 0)
+	{
+		n1 = -n;
 		_putchar('-');
-
-	while (n / power != 0)
+	} else
 	{
-		len++;
-		power *= 10;
+		n1 = n;
 	}
 
-	while (i < len)
-	{
-		_putchar(n % (10 * (len - i)) + 48);
-		i++;
-	}
+	if (n1 / 10)
+		print_number(n1 / 10);
+
+	_putchar((n1 % 10) + '0');
 }
