@@ -13,8 +13,9 @@ char *cap_string(char *s)
 	while (s[i] != '\0')
 	{
 		if (i == 0)
+		{
 			s[i] -= 32;
-			i++;
+		}
 		if (s[i - 1] == ' ' ||
 			s[i - 1] == '\n' ||
 			s[i - 1] == '\t' ||
@@ -27,7 +28,7 @@ char *cap_string(char *s)
 			s[i - 1] == '(' ||
 			s[i - 1] == ')' ||
 			s[i - 1] == '}' ||
-			s[i - 1] == '{' ||)
+			s[i - 1] == '{')
 			{
 				if (s[i] >= 'a' && s[i] <= 'z')
 					s[i] -= 32;
