@@ -19,7 +19,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (s1[i] >= 65 && s1[i] <= 90 || s1[i] >= 97 && s1[i] <= 122)
 		{
-			str1 += s1[i];
+			str1 += (int)s1[i];
 		}
 		i++;
 	}
@@ -27,7 +27,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (s2[i] >= 65 && s2[i] <= 90 || s2[i] >= 97 && s2[i] <= 122)
 		{
-			str2 += s2[i];
+			str2 += (int)s2[i];
 		}
 		j++;
 	}
