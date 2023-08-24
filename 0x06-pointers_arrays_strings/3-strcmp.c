@@ -12,15 +12,25 @@ int _strcmp(char *s1, char *s2)
 {
 	int i = 0;
 	int j = 0;
+	int str1 = 0;
+	int str2 = 0;
 
 	while (s1[i] != '\0')
 	{
+		if (s1[i] >= 65 && s1[i] <= 90 || s1[i] >= 97 && s1[i] <= 122)
+		{
+			str1 += s1[i];
+		}
 		i++;
 	}
 	while (s2[j] != '\0')
 	{
+		if (s2[i] >= 65 && s2[i] <= 90 || s2[i] >= 97 && s2[i] <= 122)
+		{
+			str2 += s2[i];
+		}
 		j++;
 	}
 
-	return (i - j);
+	return (str1 - str2);
 }
