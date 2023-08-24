@@ -22,7 +22,7 @@ void print_number(int n)
 
 	while (i < len)
 	{
-		_putchar(n / (10 * (len - i)) + 48);
+		_putchar(n % (10 * (len - i)) + 48);
 		i++;
 	}
 }
