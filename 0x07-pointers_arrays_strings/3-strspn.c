@@ -15,19 +15,9 @@ unsigned int _strspn(char *s, char *accept)
 	if ((s == NULL) || (accept == NULL))
 		return (c);
 
-	while (s[i] != '\0')
+	while (*s && strchr(accept, *s++))
 	{
-		int j = 0;
-
-		while (accept[j] != '\0')
-		{
-			if (s[i] == accept[j])
-			{
-				c++;
-			}
-			j++;
-		}
-		i++;
+		c++;
 	}
 
 	return (c);
