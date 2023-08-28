@@ -6,9 +6,8 @@
 * any of a set of bytes.
 * @s: string checked.
 * @accept: string cosist of bytes should be counted.
-* Return: s.
+* Return: @s.
 */
-char *_strchr(char *s, char c);
 
 char *_strpbrk(char *s, char *accept)
 {
