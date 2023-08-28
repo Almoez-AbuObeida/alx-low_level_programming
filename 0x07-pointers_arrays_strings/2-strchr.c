@@ -11,7 +11,7 @@ char *_strchr(char *s, char c)
 {
 	char *p = NULL;
 	/*handling null pointer*/
-	if(s != NULL)
+	if (s != NULL)
 	{
 		while (*s++)
 		{
