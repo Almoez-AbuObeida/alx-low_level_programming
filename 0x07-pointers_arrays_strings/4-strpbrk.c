@@ -12,13 +12,13 @@ char *_strchr(char *s, char c);
 char *_strpbrk(char *s, char *accept)
 {
 	if ((s == NULL) || (accept == NULL))
-		return NULL;
+		return (NULL);
 
 	while (*s)
 	{
 		if (_strchr(accept, *s))
 		{
-			return s;
+			return (s);
 		}
 		else
 		{
@@ -26,7 +26,7 @@ char *_strpbrk(char *s, char *accept)
 		}
 	}
 
-	return NULL;
+	return (NULL);
 }
 
 /**
