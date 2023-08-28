@@ -9,13 +9,12 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int i = 0;
 	int c = 0;
 
 	if ((s == NULL) || (accept == NULL))
 		return (c);
 
-	while (*s && strchr(accept, *s++))
+	while (*s && _strchr(accept, *s++))
 	{
 		c++;
 	}
