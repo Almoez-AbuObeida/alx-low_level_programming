@@ -9,18 +9,19 @@
 
 char *_strchr(char *s, char c)
 {
-	int i = 0;
-	char *p = NULL;
-
-	while (s[i] != '\0')
-	{
-		if (s[i] == c)
-		{
-			p = &s[i];
-			break;
-		}
-		i++;
-	}
-
-	return (p);
+	 char *p = NULL;
+    /*handling null pointer*/
+    if(s != NULL)
+    {
+        do
+        {
+            if( *s == (char)c )
+            {
+                p = s;
+                break;
+            }
+        }
+        while(*s++);
+    }
+    return p;
 }
