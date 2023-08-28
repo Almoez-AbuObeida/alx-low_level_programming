@@ -12,7 +12,7 @@ unsigned int _strspn(char *s, char *accept)
 	int i = 0;
 	int c = 0;
 
-	if ((*s == NULL) || (*accept == NULL))
+	if ((s == NULL) || (accept == NULL))
 	{
 		return (c);
 	}
