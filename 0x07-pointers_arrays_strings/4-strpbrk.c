@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
 * _strpbrk - a function that searches a string for
@@ -16,7 +17,7 @@ char *_strpbrk(char *s, char *accept)
 
 	while (*s)
 	{
-		if (_strchr(accept, *s))
+		if (strchr(accept, *s))
 		{
 			return (s);
 		}
@@ -27,30 +28,4 @@ char *_strpbrk(char *s, char *accept)
 	}
 
 	return (NULL);
-}
-
-/**
-* _strchr - A function that locates a character in a string.
-* @s: A string to locat characters.
-* @c: A char to locat.
-* Return: a pointer if found or NULL if not.
-*/
-
-char *_strchr(char *s, char c)
-{
-	char *p = NULL;
-	/*handling null pointer*/
-	if (s != NULL)
-	{
-		while (*s++)
-		{
-			if (*s == c)
-			{
-				p = s;
-				break;
-			}
-		}
-	}
-
-	return (p);
 }
