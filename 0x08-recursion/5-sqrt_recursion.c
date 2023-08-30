@@ -11,7 +11,7 @@ int guess(int n, int g)
 	if ((g * g) == n)
 		return (g);
 
-	if (g >= n)
+	if ((g * g) > n)
 		return (-1);
 
 	return (guess(n, g + 1));
