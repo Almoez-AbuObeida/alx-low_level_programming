@@ -1,6 +1,23 @@
 #include "main.h"
 
 /**
+* guess - to guess the squar root.
+* @n: the number
+* @g: the guess number
+* Return: the SQRT.
+*/
+int guess(int n, int g)
+{
+	if ((g * g) == n)
+	{
+		return (g);
+	}
+	guess(n, g + 1);
+	if (g >= n)
+		return (-1);
+}
+
+/**
 * _sqrt_recursion - a function that returns the natural
 * square root of a number.
 * @n: The number to get the squar root for.
@@ -9,17 +26,5 @@
 
 int _sqrt_recursion(int n)
 {
-	int guess = 0;
-
-	if (n == 0)
-		return (0);
-	if (guess < n)
-	{
-		if (n / (guess * guess) == 1)
-			return (guess);
-	}
-
-	guess++;
-
-	return (-1);
+	guess(n, 1);
 }
