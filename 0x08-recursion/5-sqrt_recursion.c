@@ -29,5 +29,5 @@ int guess(int n, int g)
 
 int _sqrt_recursion(int n)
 {
-	guess(n, 1);
+	return (guess(n, 1));
 }
