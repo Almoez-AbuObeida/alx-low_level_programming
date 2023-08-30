@@ -21,5 +21,5 @@ int _sqrt_recursion(int n)
 
 	guess++;
 
-	return (-1)
+	return (-1);
 }
