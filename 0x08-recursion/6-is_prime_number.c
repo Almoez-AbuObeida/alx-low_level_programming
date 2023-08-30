@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- *comparar - function that returns the power of number
- *@n: original number
- *@y: counter to compare multiplication
- *
- *Return: square root
- */
+* checker - function that returns the power of number
+* @n: original number
+* @y: counter to compare multiplication
+* Return: square root
+*/
 int checker(int n, int y)
 {
 	int i = 0;
