@@ -7,7 +7,7 @@
  *
  *Return: square root
  */
-int checher(int n, int y)
+int checker(int n, int y)
 {
 	int i = 0;
 
@@ -15,7 +15,7 @@ int checher(int n, int y)
 	{
 		if (n % y == 0)
 			i++;
-		return (i + comparar(n, y + 1));
+		return (i + checker(n, y + 1));
 	}
 	return (i);
 }
