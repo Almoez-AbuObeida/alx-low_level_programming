@@ -9,12 +9,12 @@
 int guess(int n, int g)
 {
 	if ((g * g) == n)
-	{
 		return (g);
-	}
-	guess(n, g + 1);
+
 	if (g >= n)
 		return (-1);
+
+	return (guess(n, g + 1));
 }
 
 /**
