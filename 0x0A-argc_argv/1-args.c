@@ -9,7 +9,12 @@
 
 int main(int argc, char *argv[])
 {
-	_putchar(argc + '0');
+	int i = 0;
+
+	while (argv[argc]--)
+		i++;
+
+	_putchar((i - 1) + '0');
 	_putchar('\n');
 
 	return (0);
