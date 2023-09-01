@@ -9,13 +9,17 @@
 
 int main(int argc, char *argv[])
 {
-	int i = 0;
+	int i;
 
-	while (argv[argc]--)
-		i++;
+	if (argc == 1)
+		putchar('0');
+	else
+	{
+		for (i = 0; *argv; i++, argv++)
+			;
 
-	_putchar((i - 1) + '0');
-	_putchar('\n');
+		_putchar((i - 1) + '0');
+	}
 
 	return (0);
 }
