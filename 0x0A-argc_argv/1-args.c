@@ -11,10 +11,10 @@ int main(int argc, char *argv[])
 {
 	int i = 0;
 
-	while (argv[argc]--)
+	while (argv[argc])
 		i++;
 
-	_putchar(i + '0');
+	_putchar(argc + '0');
 	_putchar('\n');
 
 	return (0);
