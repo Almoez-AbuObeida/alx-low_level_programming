@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
 
 		return (1);
 	}
+
 	int a = atoi(argv[1]);
 	int b = atoi(argv[2]);
 
