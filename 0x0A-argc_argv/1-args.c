@@ -1,5 +1,7 @@
 #include "main.h"
 
+void print_number(int n);
+
 /**
 * main - print the number of arguments.
 * @argv: Array of strings
