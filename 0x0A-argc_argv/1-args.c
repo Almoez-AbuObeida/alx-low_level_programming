@@ -1,7 +1,5 @@
 #include "main.h"
 
-void print_number(int n);
-
 /**
 * main - print the number of arguments.
 * @argv: Array of strings
@@ -11,19 +9,6 @@ void print_number(int n);
 
 int main(int argc, char *argv[])
 {
-	print_number(argc);
-}
-
-/**
-* print_number - a function that prints an integer.
-* @n: integer.
-* Return: nothing
-*/
-
-void print_number(int n)
-{
-	if (n / 10 > 0)
-		print_number(n / 10);
-
-	_putchar((n % 10) + '0');
+	_putchar(argc + '0');
+	_putchar('\n');
 }
