@@ -9,11 +9,6 @@
 
 int main(int argc, char *argv[])
 {
-	int i = 0;
-
-	while (argv[argc])
-		i++;
-
 	_putchar(argc + '0');
 	_putchar('\n');
 
