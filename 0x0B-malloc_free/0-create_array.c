@@ -14,14 +14,14 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 	{
-		*s = NULL;
+		s = NULL;
 	}
 	else
 	{
 		while (*s != '\0')
 		{
 			*s = c;
-			*s++;
+			s++;
 		}
 	}
 
