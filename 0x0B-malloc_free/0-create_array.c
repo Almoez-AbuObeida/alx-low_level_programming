@@ -23,12 +23,10 @@ char *create_array(unsigned int size, char c)
 		while (i < j)
 		{
 			s[i] = c;
-			if (s[i] == NULL)
-			{
-				s = NULL;
-			}
 		}
+		return (s);
 	}
-
+	
 	return (s);
+	free(s);
 }
