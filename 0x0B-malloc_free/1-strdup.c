@@ -18,7 +18,7 @@ char *_strdup(char *str)
 	int l = strlen(str) + 1;
 
 	s = malloc(l);
-	s = memcpy(s, str, l);
+	memcpy(s, str, l);
 
 	return (s);
 	free(s);
