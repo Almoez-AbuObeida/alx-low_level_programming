@@ -14,7 +14,9 @@ char *_strdup(char *str)
 	char *dest = malloc(len);
 
 	if (str == NULL)
+	{
 		return (NULL);
+	}
 	else
 	{
 		memcpy(dest, str, len);
