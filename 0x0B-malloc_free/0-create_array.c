@@ -10,10 +10,10 @@
 
 char *create_array(unsigned int size, char c)
 {
-	int j = size;
 	int i = 0;
+	char *s;
 
-	char *s = malloc(sizeof(char) * j);
+	s = malloc(sizeof(char) * size);
 	if (size == 0)
 	{
 		s = NULL;
