@@ -20,7 +20,7 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		while (s[i] != '\0' && i < size)
+		while (size--)
 		{
 			s[i] = c;
 			i++;
