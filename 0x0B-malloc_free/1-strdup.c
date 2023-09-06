@@ -10,17 +10,15 @@
 
 char *_strdup(char *str)
 {
+	char *dest;
 	int len = strlen(str) + 1;
-	char *dest = malloc(len);
 
-	if (str == NULL || len == 0)
+	dest = malloc(len);
+	if (str == NULL || len == 1)
 	{
-		dest = NULL;
+		return (NULL);
 	}
-	else
-	{
-		memcpy(dest, str, len);
-	}
+	memcpy(dest, str, len);
 
 	return (dest);
 	free(dest);
