@@ -1,43 +1,43 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
-* _realloc - reallocates a memory block
-* @ptr: pointer to the memory previously allocated
-* with a call to malloc
-* @old_size: size of ptr
-* @new_size: size of the new memory to be allocated
-* Return: pointer to the address of the new memory block
-*/
-
+ * _realloc - Entry point
+ *@ptr: pointer to the memory previously allocated
+ *@old_size: size of the allocated ptr
+ *@new_size: size of new memory block
+ * Return: a pointer to an array
+ */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	void *temp_block;
+	char *array = NULL;
+	char *p = NULL;
 	unsigned int i;
+	char *px = NULL;
 
 	if (ptr == NULL)
 	{
-		temp_block = malloc(new_size);
-		return (temp_block);
+		array = malloc(new_size);
+		if (array == NULL)
+			return (NULL);
+		return (array);
 	}
-	else if (new_size == old_size)
-		return (ptr);
-
-	else if (new_size == 0 && ptr != NULL)
+	if (new_size == 0 && ptr != NULL)
 	{
 		free(ptr);
 		return (NULL);
 	}
-	else
+	if (new_size ==  old_size)
+		return (ptr);
+	p = malloc(new_size);
+	if (p != NULL)
 	{
-		temp_block = malloc(new_size);
-		if (temp_block != NULL)
-		{
-			for (i = 0; i < min(old_size, new_size); i++)
-				*((char *)temp_block + i) = *((char *) ptr + i);
-			free(ptr);
-			return (temp_block);
-		}
-		else
-			return (NULL);
+		px = (char *)ptr;
+		for (i = 0; i < old_size; i++)
+			p[i] = px[i];
+		free(ptr);
+		return (p);
 	}
+	return (NULL);
 }
