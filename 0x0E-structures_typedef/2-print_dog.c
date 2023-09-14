@@ -29,7 +29,7 @@ void print_dog(struct dog *d)
 	}
 	else if (d->age != '\0')
 	{
-		printf("Age: %f\n", d->age);
+		printf("Age: %.6f\n", d->age);
 	}
 	else if (d->age == '\0')
 	{
